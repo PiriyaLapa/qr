@@ -19,6 +19,7 @@ function App() {
           Learn React
         </a>
       <h1>Hello world Netlify for deploy</h1>
+      <h1>Hello world Netlify for deploy</h1>
       </header>
     </div>
   );

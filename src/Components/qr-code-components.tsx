@@ -65,11 +65,11 @@ interface ImgQrProps {
 }
 
 const StyledImgQr = styled.img`
-  width: 77%;
-  height: 77%;
+  width: 65%;
+  height: 65%;
   border-radius: 18px;
   padding: 30px;
-  margin-top: 20px;
+  margin-top: 10px;
 `;
 
 export const Circle1 = styled.div`
@@ -80,7 +80,7 @@ export const Circle1 = styled.div`
   border-radius: 50%;
   position: absolute;
   top: 48.7%;
-  left: 53.9%;
+  left: 75.9%;
   transform: translate(-50%, -50%);
 
   // 1/4 circle
@@ -96,6 +96,21 @@ export const Circle1 = styled.div`
     width: 150px;
     height: 150px;
   }
+
+  @media (max-width: 1285.60px), (max-height: 695.20px) {
+    top: 49.8%;
+    left:54.7%;
+    width: 150px;
+    height: 150px;
+  }
+
+  @media (max-width: 1285.60px), (max-height: 864px) {
+    top: 49.8%;
+    left:55.7%;
+    width: 150px;
+    height: 150px;
+  }
+
 
   @media (max-width: 375px) {
     background-color: #2c7dfa;
@@ -116,7 +131,7 @@ export const Circle2 = styled(Circle1)`
   } */
 
   /* Detop screen size */
-  @media (max-width: 1280px), (max-height: 720px) {
+  /* @media (max-width: 1280px), (max-height: 720px) {
     top: 18.2%;
     left:39%;
     transform: rotate(180deg);
@@ -130,9 +145,33 @@ export const Circle2 = styled(Circle1)`
     transform: rotate(180deg);
     width: 150px;
     height: 150px;
+  } */
+  @media (min-width: 1285.60px), (min-height: 864px) {
+    top: 22.9%;
+    left:38.4%;
+    transform: rotate(180deg);
+    width: 150px;
+    height: 150px;
   }
 
-  @media (max-width: 1366px), (max-height: 768px) {
+  @media (min-width: 1285.60px), (min-height: 695.20px) {
+    top: 16.9%;
+    left:40.4%;
+    transform: rotate(180deg);
+    width: 150px;
+    height: 150px;
+  }
+
+
+  /* @media (min-width: 1245px), (min-height: 608px) {
+    top: 12.1%;
+    left:38.4%;
+    transform: rotate(180deg);
+    width: 150px;
+    height: 150px;
+  } */
+
+  /* @media (max-width: 1366px), (max-height: 768px) {
     top: 20.1%;
     left:38.4%;
     transform: rotate(180deg);
@@ -154,7 +193,7 @@ export const Circle2 = styled(Circle1)`
     transform: rotate(180deg);
     width: 150px;
     height: 150px;
-  }
+  } */
 
 `;
 

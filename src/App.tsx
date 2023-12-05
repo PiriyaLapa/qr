@@ -1,28 +1,16 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      <h1>Hello world Netlify for deploy</h1>
-      <h1>Hello world Netlify for deploy</h1>
-      </header>
-    </div>
-  );
+import { Component, ReactNode } from "react";
+import QrCode from "./Components/qr-code-components";
+import { Container, Circle1, Circle2 } from "./Components/qr-code-components";
+export default class App extends Component {
+  render(): ReactNode {
+    return (
+      <div>
+        <Container>
+          <QrCode />
+          <Circle1 />
+          <Circle2 />
+        </Container>
+      </div>
+    );
+  }
 }
-
-export default App;

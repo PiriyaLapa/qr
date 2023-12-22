@@ -10,8 +10,8 @@ export default class App extends Component {
           <QrCode />
           <Circle1 />
           <Circle2 />
-        </Container>
         <QrCodeCard2 /> 
+        </Container>
       </div>
     );
   }

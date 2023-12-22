@@ -2,7 +2,7 @@ import { Component, ReactNode } from "react";
 import styled from "styled-components";
 import qrUrl from "../img/qr-code.png";
 
-const CardQR = styled.div`
+export const CardQR = styled.div`
   border: 1px solid #979797;
   width: 320px;
   height: 497px;
@@ -15,7 +15,7 @@ const CardQR = styled.div`
   transform: translate(-50%, -50%);
 `;
 
-const QrBox = styled.div`
+export const QrBox = styled.div`
   width: 288px;
   height: 288px;
   background-color: #2c7dfa;
@@ -30,7 +30,7 @@ const QrBox = styled.div`
     background-color: #3685ff;
   }
 `;
-const ContentBox = styled(QrBox)`
+export const ContentBox = styled(QrBox)`
   height: auto;
   background-color: white;
   margin: 0 auto;
@@ -126,26 +126,6 @@ export const Circle2 = styled(Circle1)`
   width: 150px;
   height: 150px;
 
-  /* @media (max-width: 375px) {
-    top: 15%;
-  } */
-
-  /* Detop screen size */
-  /* @media (max-width: 1280px), (max-height: 720px) {
-    top: 18.2%;
-    left:39%;
-    transform: rotate(180deg);
-    width: 150px;
-    height: 150px;
-  }
-
-  @media (max-width: 1280px), (max-height: 1040px) {
-    top: 28.1%;
-    left:38.4%;
-    transform: rotate(180deg);
-    width: 150px;
-    height: 150px;
-  } */
   @media (min-width: 1285.60px), (min-height: 864px) {
     top: 22.9%;
     left:38.4%;
@@ -162,42 +142,9 @@ export const Circle2 = styled(Circle1)`
     height: 150px;
   }
 
-
-  /* @media (min-width: 1245px), (min-height: 608px) {
-    top: 12.1%;
-    left:38.4%;
-    transform: rotate(180deg);
-    width: 150px;
-    height: 150px;
-  } */
-
-  /* @media (max-width: 1366px), (max-height: 768px) {
-    top: 20.1%;
-    left:38.4%;
-    transform: rotate(180deg);
-    width: 150px;
-    height: 150px;
-  }
-
-  @media (max-width: 1440px), (max-height: 900px) {
-    top: 29.1%;
-    left:39.7%;
-    transform: rotate(180deg);
-    width: 150px;
-    height: 150px;
-  }
-
-  @media (max-width: 1920px), (max-height: 1080px) {
-    top: 25.3%;
-    left:42.7%;
-    transform: rotate(180deg);
-    width: 150px;
-    height: 150px;
-  } */
-
 `;
 
-class ImageQR extends Component<ImgQrProps> {
+export class ImageQR extends Component<ImgQrProps> {
   render(): ReactNode {
     return <StyledImgQr src={this.props.imgUrl} alt="Image address" />; 
   }

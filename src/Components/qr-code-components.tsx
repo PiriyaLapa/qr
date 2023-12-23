@@ -11,6 +11,7 @@ export const CardQR = styled.div`
   background-color: white;
   position:absolute;
   top:10%;
+   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 `;
 
 export const QrBox = styled.div`

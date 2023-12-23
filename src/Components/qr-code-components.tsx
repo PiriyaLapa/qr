@@ -9,10 +9,8 @@ export const CardQR = styled.div`
   margin: 0 auto;
   border-radius: 18px;
   background-color: white;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position:absolute;
+  top:10%;
 `;
 
 export const QrBox = styled.div`
@@ -41,10 +39,12 @@ export const ContentBox = styled(QrBox)`
   }
   :nth-child(1) {
     color: #3685ff;
+    font-size: 1.375rem;
   }
 
   :nth-child(2) {
     color: #7d889e;
+    font-size: 0.938rem;
   }
 `;
 
@@ -52,7 +52,8 @@ export const Container = styled.div`
   background-color: #d5e1ef;
   height: 1000px;
   width: 100%;
-  margin: 0 auto;
+  display:flex;
+  justify-content:center;
 
   // Mobile size screen
   @media (max-width: 375px) {
@@ -92,31 +93,29 @@ export const Circle1 = styled.div`
   /* Screen size */
   @media (max-width: 1920px), (max-height: 1080px) {
     top: 48.8%;
-    left:53.7%;
+    left: 53.7%;
     width: 150px;
     height: 150px;
   }
 
-  @media (max-width: 1285.60px), (max-height: 695.20px) {
+  @media (max-width: 1285.6px), (max-height: 695.2px) {
     top: 49.8%;
-    left:54.7%;
+    left: 54.7%;
     width: 150px;
     height: 150px;
   }
 
-  @media (max-width: 1285.60px), (max-height: 864px) {
+  @media (max-width: 1285.6px), (max-height: 864px) {
     top: 49.8%;
-    left:55.7%;
+    left: 55.7%;
     width: 150px;
     height: 150px;
   }
-
 
   @media (max-width: 375px) {
     background-color: #2c7dfa;
     opacity: 0.5;
   }
-
 `;
 
 export const Circle2 = styled(Circle1)`
@@ -126,27 +125,26 @@ export const Circle2 = styled(Circle1)`
   width: 150px;
   height: 150px;
 
-  @media (min-width: 1285.60px), (min-height: 864px) {
+  @media (min-width: 1285.6px), (min-height: 864px) {
     top: 22.9%;
-    left:38.4%;
+    left: 38.4%;
     transform: rotate(180deg);
     width: 150px;
     height: 150px;
   }
 
-  @media (min-width: 1285.60px), (min-height: 695.20px) {
+  @media (min-width: 1285.6px), (min-height: 695.2px) {
     top: 16.9%;
-    left:40.4%;
+    left: 40.4%;
     transform: rotate(180deg);
     width: 150px;
     height: 150px;
   }
-
 `;
 
 export class ImageQR extends Component<ImgQrProps> {
   render(): ReactNode {
-    return <StyledImgQr src={this.props.imgUrl} alt="Image address" />; 
+    return <StyledImgQr src={this.props.imgUrl} alt="Image address" />;
   }
 }
 
@@ -159,7 +157,7 @@ export default class QrCode extends Component {
             <ImageQR imgUrl={qrUrl} />
           </QrBox>
           <ContentBox>
-            <h3>Improve your front-end skills by building projects</h3> 
+            <h3>Improve your front-end skills by building projects</h3>
             <p>
               Scan the QR code to visit Frontend Mentor and take your coding
               skills to the next level

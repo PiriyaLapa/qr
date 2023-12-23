@@ -7,13 +7,12 @@ export default class App extends Component {
     return (
       <div>
         <Container>
-          <QrCode />
+        <QrCodeCard2 /> 
+          {/* <QrCode />
           <Circle1 />
-          <Circle2 />
+          <Circle2 /> */}
         </Container>
         <div>
-          <h1>Card2 Test</h1>
-        <QrCodeCard2 /> 
         </div>
       </div>
     );
